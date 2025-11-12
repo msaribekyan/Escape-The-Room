@@ -3,12 +3,15 @@
 import numpy as np
 
 def diagonal_product(arr: np.ndarray):
-    if (arr.ndim != 2) or (arr.shape != (3,3)):
-        return 0
-    product = 1
-    for i in range(3):
-        product = product * arr[i][i]
-    return product
+    try:
+        if arr.shape != (3,3):
+            return 0 # arr is not a 3x3 matrix
+        product = 1
+        for i in range(3):
+            product = product * arr[i][i]
+        return product
+    except:
+        return 0 # arr is not a numpy object
 
 # Example: [[1,2,3],[4,5,6],[7,8,9]] returns 45.
 print(diagonal_product(np.array([[1,2,3],[4,5,6],[7,8,9]])))
