@@ -3,16 +3,17 @@ import math
 def prime_numbers(integer_list):
     prime_list=[]
     for item in integer_list:
-        sqrt_item=math.sqrt(item)
+        if item < 2:
+            continue
+
+        sqrt_item=int(math.sqrt(item))
         is_prime=True
-        if item==1:
-            is_prime=False
-        else:
-            for num in range(2,int(sqrt_item+1)):
-                if item%num==0:
-                    is_prime=False
-                    break
+
+        for num in range(2, sqrt_item + 1):
+            if item % num == 0:
+                is_prime = False
+                break
         if is_prime:
             prime_list.append(item)
     return prime_list
-print(prime_numbers([1,2,3,4]))#output is [2,3]
+print(prime_numbers([0, -1, 2, 3])) #output is [2,3]
