@@ -14,5 +14,5 @@ def prime_numbers(integer_list):
                     break
         if is_prime:
             prime_list.append(item)
-    print(prime_list)
-prime_numbers([1,2,3,4]) #output is [2,3]
+    return prime_list
+print(prime_numbers([1,2,3,4]))#output is [2,3]
