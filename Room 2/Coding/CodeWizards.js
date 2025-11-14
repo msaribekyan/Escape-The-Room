@@ -11,5 +11,3 @@ function isPalindrome(str) {
 
 console.log(isPalindrome("racecar"));
 console.log(isPalindrome("hello"));
-console.log(isPalindrome("A man a plan a canal Panama"));
-
