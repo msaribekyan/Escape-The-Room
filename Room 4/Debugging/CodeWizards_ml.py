@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
-model = LogisticRegression
+model = LogisticRegression()
 
 pipe = Pipeline([
     ('scaler', StandardScaler()),
@@ -12,4 +12,3 @@ pipe = Pipeline([
 ])
 
 pipe.fit(X_train, y_train)
-
