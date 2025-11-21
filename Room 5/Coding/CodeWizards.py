@@ -8,6 +8,6 @@ def for_list(input_list):
             result_list.append((value,index))
     return result_list
 try:
-    print(for_list([1, 2, 3, 4, 5]))
+    print(for_list([1, 2, 3, 4, 5]))# output is [(1, 0), (3, 2), (5, 4)]
 except ValueError as e:
     print("Error:", e)
