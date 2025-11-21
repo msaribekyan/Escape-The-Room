@@ -3,8 +3,8 @@
 def squares(lst):
     result = []
     for num in lst:
-        if type(num) == int or float:
-            result.append(num*num)
+        if type(num) == int:
+            result.append(num**2)
     return result
 
 print(squares([1, 2, "three", 4, "five"]))
