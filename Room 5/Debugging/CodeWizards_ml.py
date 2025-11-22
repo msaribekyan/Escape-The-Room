@@ -5,8 +5,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 
 pipe = Pipeline([
-    ("scaler", StandardScaler),
-    ("model", LogisticRegression)
+    ("scaler", StandardScaler()),
+    ("model", LogisticRegression())
 ])
 
 pipe.fit(X_train, y_train)
