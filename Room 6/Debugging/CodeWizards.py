@@ -1,7 +1,7 @@
 #Fix the function so it correctly multiplies all elements of a list.
 
 def multiply_elements(lst):
-    product = 0
+    product = 1
     for num in lst:
         product *= num
     return product
