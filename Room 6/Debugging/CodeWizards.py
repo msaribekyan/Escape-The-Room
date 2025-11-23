@@ -6,4 +6,4 @@ def multiply_elements(lst):
         product *= num
     return product
 
-print(multiply_elements([1, 2, 3, 4]))
+print(multiply_elements([1, 2, 3, 4]))#output is 24
