@@ -2,4 +2,4 @@
 
 from sklearn.linear_model import LogisticRegression
 model = LogisticRegression()
-model.predict_proba()
+model.fit(X_train, y_train)
