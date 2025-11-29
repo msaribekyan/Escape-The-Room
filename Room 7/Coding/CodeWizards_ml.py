@@ -10,7 +10,7 @@ def normalize_df(df):
         # Check of the column is constant
         if (df[col].nunique() == 1):
             continue
-        df[col] = (df[col]-df[col].mean())/df[col].std()
+        df[col] = (df[col]-df[col].min())/(df[col].max() - df[col].min())
 
     return df
 
@@ -21,7 +21,6 @@ data = {
     'D': [3, 3, 3],
     "E": ['hello', 'hi', 'hey']
 }
-
 
 df = pd.DataFrame(data)
 
