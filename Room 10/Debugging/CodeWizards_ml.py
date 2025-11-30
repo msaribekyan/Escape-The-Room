@@ -10,7 +10,7 @@ def classify_data():
         "label": [0, 1, 0]
     })
     model = LogisticRegression()
-    model.fit(data[["x"]], data["label"])
+    model.fit(data[["x", "y"]], data["label"])
     predictions = model.predict(data[["x", "y"]])
     if len(predictions) == 3:
         return "Model complete"
