@@ -1,0 +1,1 @@
+# Write a function analyze_text(data: list) that receives a list of sentences (strings). Count how many sentences contain the word "python"; return a dictionary with: "total": total number of sentences, "contains_python": number of sentences with the word "python"

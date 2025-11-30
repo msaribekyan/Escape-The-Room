@@ -1,0 +1,1 @@
+# Write a function standardize_and_classify(df) that accepts a pandas DataFrame with numerical columns ["A", "B"] and target column "label"; standardizes the columns ["A", "B"] using StandardScaler; fits a LogisticRegression model to classify "label", returns the model's training accuracy using .score()
