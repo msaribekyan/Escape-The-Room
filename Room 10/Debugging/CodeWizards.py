@@ -4,7 +4,7 @@ def check_positive_sum(nums):
     total = 0
     for n in nums:
         if n > 0:
-            total =+ n
+            total += n
     if total > 10:
         return "Well done"
     return "Try again"
